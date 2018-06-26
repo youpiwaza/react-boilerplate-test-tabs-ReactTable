@@ -21,6 +21,7 @@ import {
 } from 'containers/App/selectors';
 import H2 from 'components/H2';
 import ReposList from 'components/ReposList';
+import TestReactTable from 'containers/TestReactTable';
 import AtPrefix from './AtPrefix';
 import CenteredSection from './CenteredSection';
 import Form from './Form';
@@ -62,6 +63,7 @@ export class HomePage extends React.PureComponent {
           />
         </Helmet>
         <div>
+          <TestReactTable />
           <CenteredSection>
             <H2>
               <FormattedMessage {...messages.startProjectHeader} />
